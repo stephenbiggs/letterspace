@@ -25,14 +25,14 @@ body,html { height: 100%; line-height: 1.3; font-family: 'FuturaBT-Medium', seri
 img { max-width: 100%; }
 .centered { margin: 0 auto; width: 90%; max-width: 1000px; text-align: center;  }
 .clear { display: block; line-height: 0; font-size: 0; margin: 0; padding: 0; height: 0; overflow: hidden; clear: both; }
-.border { background-image: url(bg.png); background-repeat: repeat-x; background-size: auto 30px; }
+.border { background-image: url(bg.png); background-repeat: repeat-x; background-size: auto 20px; }
 .highlight { color: $fifth-color; }
 .white { color: $primary-color; }
 .center { text-align: center; }
 
 /* Page Styles */
 /* 16px browser default */
-h1 { font-size: 75px; /* 28px */ letter-spacing: 5px; }
+h1 { font-size: 60px; /* 28px */ letter-spacing: 10px; }
 h2 { font-size: 1.875em; /* 30px */ letter-spacing: 5px; }
 h3 { font-size: 1.75em; /* 28px */ line-height: 1.7; }
 h4 { font-size: 1em; /* 16px */ }
@@ -106,8 +106,9 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 /* Footer */
 #footer { background-color: $fourth-color; color: $primary-color; margin-bottom: 0; padding: 8% 0%; /* 80px 0px */
 	.centered { text-align: left; }
-	ul { padding-left: 25%; }
-	li { display: inline-block; width: 10%; padding-right: 5%; }
+	li { display: inline-block; }
+	.social_btn { width: 15%; padding-right: 5%; }
+	.hello { padding-top: 5%; }
 	li:last-child { margin-right: 0; }
 	p, li { padding-bottom: 0; margin-bottom: 0; font-size: 1.75em; /* 28px */ }
 }
@@ -115,7 +116,7 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 /* Content */
 #content { text-align: center; }
 .border {
-	h2 { background-color: $primary-color; margin: 0 auto; display: inline-block; padding: 0% 2.5%; }
+	h2 { background-color: $primary-color; margin: 0 auto; display: inline-block; padding: 0% 5%; font-size: 35px; margin: -5%; padding-top: 4.3%; }
 }
 #atoz, #newsletter { background-color: $fifth-color; }
 .fill { padding: 1.5% 0px; } /* 15px 0px */
@@ -129,7 +130,7 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 #show { padding-bottom: 5%; }
 #newsletter { padding: 5% 0%; }
 #atoz { padding: 5% 0% 6% 0%;
-	h2 { font-size: 75px; letter-spacing: normal; }
+	h2 { font-size: 55px; letter-spacing: normal; }
 	h3 { padding-bottom: 1.8%; /* 18px */ }
 	p { line-height: 2; padding-bottom: 0; }
 }
