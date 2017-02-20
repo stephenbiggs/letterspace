@@ -1,0 +1,16 @@
+
+<div class="grid_12 subscribe_box">
+
+  <%= simple_form_for @subscriber do |f| %>
+
+    <div class="subscribe_input">
+      <%= f.input :email, placeholder: "Enter your email address here", label: false %>
+    </div>
+
+    <div class="subscribe_btn">
+      <%= f.button :submit, value: "A-OK!" %>
+    </div>
+
+  <% end %>
+
+</div>
