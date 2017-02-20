@@ -53,4 +53,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
+gem 'simple_form'
 gem 'foundation-rails', '~> 6.2', '>= 6.2.0.1'

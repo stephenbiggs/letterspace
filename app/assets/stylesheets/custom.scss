@@ -134,8 +134,11 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 	h3 { padding-bottom: 1.8%; /* 18px */ }
 	p { line-height: 2; padding-bottom: 0; }
 }
-
-
+.subscribe_box { text-align: center; padding-top: 5%; }
+#subscriber_email { width: 40%; display: inline-block; float: left; font-size: 1.5em; margin-left: 22%;}
+.subscribe_btn input { display: inline-block; float: left; width: 15%; font-size: 1.5em; font-weight: bold; letter-spacing: 2px; background-color: $fourth-color;	}
+.subscribe_btn input:hover { background-color: $third-color; color: $fourth-color; }
+.string.email.required { padding: 3.3%; border: #fff; }
 
 /* Media Queries / Break Points */
 
