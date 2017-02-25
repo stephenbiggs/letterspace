@@ -170,13 +170,16 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 		width: 100%;
 	}
 
+	h1 { font-size: 1.875em; /* 30px */ }
 	.mainlogo { margin: 0 auto; }
 	#instagram .grid_4, #footer .grid_4 { margin-bottom: 5%; }
 	#subscriber_email { width: 100%; display: block; margin: 0; }
 	.subscribe_btn input { display: block; width: 100%; }
 	.string.email.required { padding: 5%; }
 
-	#footer p { margin-bottom: 10%; }
+	#footer p { margin-bottom: 10%;
+		p, li { font-size: 1em; /* 16px */ }
+	}
 	.social_btn { width: 10% !important; }
 
 }
