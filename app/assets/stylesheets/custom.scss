@@ -118,7 +118,7 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 /* Content */
 #content { text-align: center; }
 .border {
-	h2 { background-color: $primary-color; margin: 0 auto; display: inline-block; padding: 0% 5%; font-size: 35px; margin: -5%; padding-top: 4.3%; }
+	h2 { background-color: $primary-color; margin: 0 auto; display: inline-block; padding: 0% 5%; font-size: 2.1875em; /* 35px */ margin: -5%; padding-top: 4.3%; }
 }
 #atoz, #newsletter { background-color: $fifth-color; }
 .fill { padding: 1.5% 0px; } /* 15px 0px */
@@ -136,6 +136,7 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 	h3 { padding-bottom: 1.8%; /* 18px */ }
 	p { line-height: 2; padding-bottom: 0; }
 }
+.border { background-size: auto 10px; }
 .subscribe_box { text-align: center; padding-top: 5%; }
 #subscriber_email { width: 40%; display: inline-block; float: left; font-size: 1.5em; margin-left: 22%;}
 .subscribe_btn input { display: inline-block; float: left; width: 15%; font-size: 1.5em; font-weight: bold; letter-spacing: 2px; background-color: $fourth-color;	}
@@ -143,6 +144,9 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 .string.email.required { padding: 3.3%; border: #fff; }
 
 #thanks { padding: 10% 0%; }
+
+
+
 
 /* Media Queries / Break Points */
 
@@ -171,12 +175,19 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 	}
 
 	h1 { font-size: 1.875em; /* 30px */ }
+	.border h2 { font-size: 1.5625em; /* 25px */ letter-spacing: 5px; margin: -10%;}
+	h3 { font-size: 1em; /* 16px */ line-height: 2; }
 	.mainlogo { margin: 0 auto; }
 	#instagram .grid_4, #footer .grid_4 { margin-bottom: 5%; }
-	#subscriber_email { width: 100%; display: block; margin: 0; }
-	.subscribe_btn input { display: block; width: 100%; }
+	#subscriber_email { width: 100%; display: block; margin: 0; font-size: 1em; }
+	.subscribe_btn input { display: block; width: 100%; font-size: 1em; }
 	.string.email.required { padding: 5%; }
-
+	#newsletter { padding: 10% 0%;
+		h2 { font-size: 1.5625em; /* 25px */ }
+	}
+	#atoz { padding: 10% 0% 12% 0%; }
+	#show, #read, #shop, #social { padding-top: 15%; }
+	#show { padding-bottom: 15%; }
 	#footer p { margin-bottom: 10%;
 		p, li { font-size: 1em; /* 16px */ }
 	}
