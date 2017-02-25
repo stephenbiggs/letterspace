@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Letterspace" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
@@ -20,7 +20,7 @@
         <div class="logobg">
           <div class="centered">
             <div class="mainlogo">
-              <h1>Letterspace</h1>
+              <h1><%= link_to "Letterspace", root_path %></h1>
             </div>
           </div>
         </div>

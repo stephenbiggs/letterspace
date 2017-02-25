@@ -8,7 +8,7 @@ class SubscribersController < ApplicationController
   def create
     @subscriber = Subscriber.new(subscriber_params)
     if @subscriber.save
-      redirect_to root_path
+      redirect_to thanks_path
     else
       render 'new'
     end

@@ -29,10 +29,12 @@ img { max-width: 100%; }
 .highlight { color: $fifth-color; }
 .white { color: $primary-color; }
 .center { text-align: center; }
+a { color: $primary-color; }
+a:hover { color: $fifth-color; }
 
 /* Page Styles */
 /* 16px browser default */
-h1 { font-size: 60px; /* 28px */ letter-spacing: 10px; }
+h1 { font-size: 3.75em; /* 60px */ letter-spacing: 10px; /* 10px */ }
 h2 { font-size: 1.875em; /* 30px */ letter-spacing: 5px; }
 h3 { font-size: 1.75em; /* 28px */ line-height: 1.7; }
 h4 { font-size: 1em; /* 16px */ }
@@ -130,7 +132,7 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 #show { padding-bottom: 5%; }
 #newsletter { padding: 5% 0%; }
 #atoz { padding: 5% 0% 6% 0%;
-	h2 { font-size: 55px; letter-spacing: normal; }
+	h2 { font-size: 3.4375em; /* 55px */ letter-spacing: normal; }
 	h3 { padding-bottom: 1.8%; /* 18px */ }
 	p { line-height: 2; padding-bottom: 0; }
 }
@@ -140,7 +142,16 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 .subscribe_btn input:hover { background-color: $third-color; color: $fourth-color; }
 .string.email.required { padding: 3.3%; border: #fff; }
 
+#thanks { padding: 10% 0%; }
+
 /* Media Queries / Break Points */
+
+@media screen and (max-width: 1100px) {
+
+	.subscribe_btn input { display: block; width: 100%; }
+	#subscriber_email { width: 100%; display: block; margin: 0; }
+
+}
 
 @media screen and (max-width: 700px) {
 
@@ -159,7 +170,13 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 		width: 100%;
 	}
 
-	.mainlogo { width: 20%; margin: 0 auto; padding-top: 15%; }
+	.mainlogo { margin: 0 auto; }
 	#instagram .grid_4, #footer .grid_4 { margin-bottom: 5%; }
+	#subscriber_email { width: 100%; display: block; margin: 0; }
+	.subscribe_btn input { display: block; width: 100%; }
+	.string.email.required { padding: 5%; }
+
+	#footer p { margin-bottom: 10%; }
+	.social_btn { width: 10% !important; }
 
 }
