@@ -183,14 +183,16 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 	.subscribe_btn input { display: block; width: 100%; font-size: 1em; }
 	.string.email.required { padding: 5%; }
 	#newsletter { padding: 10% 0%;
-		h2 { font-size: 1.5625em; /* 25px */ }
+		h2 { font-size: 0.75em; /* 12px */ }
 	}
 	#atoz { padding: 10% 0% 12% 0%; }
 	#show, #read, #shop, #social { padding-top: 15%; }
 	#show { padding-bottom: 15%; }
-	#footer p { margin-bottom: 10%;
+	#footer p { margin-bottom: 10%; }
+	#footer {
 		p, li { font-size: 1em; /* 16px */ }
 	}
 	.social_btn { width: 10% !important; }
+	#thanks h2 { font-size: 1em; /* 16px */ }
 
 }
