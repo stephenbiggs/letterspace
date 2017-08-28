@@ -9,19 +9,26 @@
 
 /* Font Imports */
 
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 @font-face {font-family: 'FuturaBT-Medium';src: asset-url('32BBFD_0_0.eot');src: asset-url('32BBFD_0_0.eot?#iefix') format('embedded-opentype'),asset-url('32BBFD_0_0.woff2') format('woff2'),asset-url('32BBFD_0_0.woff') format('woff'),asset-url('32BBFD_0_0.ttf') format('truetype');}
 
 /* Global Variables */
 
-$primary-color: #fff;
-$secondary-color: #ECECEC; /* light gray */
-$third-color: #e4febb; /* lime */
-$fourth-color: #12162d; /* blue */
+$primary-color: #fff; /* white */
+$secondary-color: #f0f0f0; /* light gray */
+$third-color: #ecbc15; /* yellow */
+$fourth-color: #2c2c2c; /* black */
 $fifth-color: #fedccc; /* pink */
+$sixth-color: #a7e9f7; /* baby blue */
+$seventh-color: #a1e3af; /* green */
+
+$primary-font: 'FuturaBT-Medium', serif;
+$secondary-font: 'EB Garamond', serif;
+
 
 /* Core */
 * { margin: 0; }
-body,html { height: 100%; line-height: 1.3; font-family: 'FuturaBT-Medium', serif; color: $fourth-color; font-weight: normal; font-style: normal; letter-spacing: 2px; }
+body,html { height: 100%; line-height: 1.3; font-family: $secondary-font; color: $fourth-color; font-weight: normal; font-style: normal; letter-spacing: 2px; }
 img { max-width: 100%; }
 .centered { margin: 0 auto; width: 90%; max-width: 1000px; text-align: center;  }
 .clear { display: block; line-height: 0; font-size: 0; margin: 0; padding: 0; height: 0; overflow: hidden; clear: both; }
@@ -96,9 +103,9 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 /* MAIN BUILD */
 
 /* Header */
-#header { margin-top: 5%; }
-.mainlogo { margin: 0 auto; padding: 10% 0%; color: $primary-color; }
-.logobg { background-color: $fourth-color; }
+#header { margin-top: 2.5%; }
+.mainlogo { margin: 0 auto; padding: 10% 5%; color: $primary-color; }
+.logobg { background-color: $secondary-color; }
 .strap { background-color: $primary-color; text-align: center; padding: 10%; }
 
 /* Navigation */
@@ -120,25 +127,23 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 .border {
 	h2 { background-color: $primary-color; margin: 0 auto; display: inline-block; padding: 0% 5%; font-size: 2.1875em; /* 35px */ margin: -5%; padding-top: 4.3%; }
 }
-#atoz, #newsletter { background-color: $fifth-color; }
+#newsletter { background-color: $secondary-color; padding: 5% 0%;
+	.centered { text-align: left; }
+}
 .fill { padding: 1.5% 0px; } /* 15px 0px */
 .follow { padding: 11% 0% 5.5% 0%; } /* 110px 0px 55px 0px */
 #instagram { padding-bottom: 6.5% ; /* 65px */ }
 #instagram .grid_4 { background-color: $secondary-color; padding: 15% 0%; }
-#show, #read, #shop, #social { padding-top: 10%;
+#show, #blurb, #social { padding-top: 10%;
 	h3 { padding-top: 8%; }
 }
-#shop { padding-bottom: 10%; }
-#show { padding-bottom: 5%; }
-#newsletter { padding: 5% 0%; }
-#atoz { padding: 5% 0% 6% 0%;
-	h2 { font-size: 3.4375em; /* 55px */ letter-spacing: normal; }
-	h3 { padding-bottom: 1.8%; /* 18px */ }
-	p { line-height: 2; padding-bottom: 0; }
+#blurb { padding-bottom: 10%; margin-top: 5%;
+	p { font-size: 1.75em; /* 28px */ line-height: 1.7; }
 }
+#social, #newsletter, #footer { font-family: $primary-font; }
 .border { background-size: auto 10px; }
-.subscribe_box { text-align: center; padding-top: 5%; }
-#subscriber_email { width: 40%; display: inline-block; float: left; font-size: 1.5em; margin-left: 22%;}
+.subscribe_box { padding-top: 5%; }
+#subscriber_email { width: 80%; display: inline-block; float: left; font-size: 1.5em; }
 .subscribe_btn input { display: inline-block; float: left; width: 15%; font-size: 1.5em; font-weight: bold; letter-spacing: 2px; background-color: $fourth-color;	}
 .subscribe_btn input:hover { background-color: $third-color; color: $fourth-color; }
 .string.email.required { padding: 3.3%; border: #fff; }
@@ -185,9 +190,8 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 	#newsletter { padding: 10% 0%;
 		h2 { font-size: 0.75em; /* 12px */ }
 	}
-	#atoz { padding: 10% 0% 12% 0%; }
-	#show, #read, #shop, #social { padding-top: 15%; }
-	#show { padding-bottom: 15%; }
+
+	#show, #blurb, #social { padding-top: 15%; }
 	#footer p { margin-bottom: 10%; }
 	#footer {
 		p, li { font-size: 1em; /* 16px */ }

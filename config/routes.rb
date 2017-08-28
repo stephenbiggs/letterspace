@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root "pages#home"
 
   resources :subscribers
+  resources :products
 
   get "thanks" => 'pages#thanks'
 
