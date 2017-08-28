@@ -26,6 +26,16 @@
         </div>
       </div>
 
+      <nav class="grid_12 border">
+        <div class="centered">
+          <ul>
+            <li>ABOUT</li>
+            <li><%= link_to "SHOP", products_path %></li>
+            <li>CONTACT</li>
+          </ul>
+        </div>
+      </nav>
+
 
 
       <div id="content">
@@ -38,7 +48,20 @@
 
       <div id="footer" class="grid_12">
 
-        <div class="grid_12">
+        <div id="sponsors" class="grid_12">
+
+          <div class="centered">
+            <h4>Kindly supported by</h4>
+
+            <ul>
+              <li><%= image_tag('sh_gray.png') %></li>
+              <li><%= image_tag('mmu_gray.png') %></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div id="contact" class="grid_12">
 
           <div class="centered">
 
@@ -58,10 +81,6 @@
             </div>
 
           </div>
-
-        </div>
-
-        <div id="copyright" class="grid_12">
 
         </div>
 

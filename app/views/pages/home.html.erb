@@ -1,12 +1,26 @@
 
 
+<div id="featured" class="grid_12">
+  <div class="centered">
+    <div id="featured_box">
+      <% @products.each do |product| %>
+
+        <div class="product_box">
+          <h2><%= product.title %></h2>
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+</div>
+
 
 
 
 
 
 <div id="blurb" class="grid_12 border">
-  
+
   <div class="centered">
     <p>
       The Letterspace project is a celebration of letterform in everyday spaces founded by designer and educator, Lucy Biggs. 26 designers are currently working to create the inaugural Letterspace alphabet spanning spaces across the UK, America, Canada, Europe and the Middle East. The alphabet will be launched at The Whitworth, Manchester, in April 2018.

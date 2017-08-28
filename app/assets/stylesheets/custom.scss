@@ -21,6 +21,7 @@ $fourth-color: #2c2c2c; /* black */
 $fifth-color: #fedccc; /* pink */
 $sixth-color: #a7e9f7; /* baby blue */
 $seventh-color: #a1e3af; /* green */
+$eighth-color: #a7a7a8; /* dark gray */
 
 $primary-font: 'FuturaBT-Medium', serif;
 $secondary-font: 'EB Garamond', serif;
@@ -30,13 +31,13 @@ $secondary-font: 'EB Garamond', serif;
 * { margin: 0; }
 body,html { height: 100%; line-height: 1.3; font-family: $secondary-font; color: $fourth-color; font-weight: normal; font-style: normal; letter-spacing: 2px; }
 img { max-width: 100%; }
-.centered { margin: 0 auto; width: 90%; max-width: 1000px; text-align: center;  }
+.centered { margin: 0 auto; width: 90%; max-width: 1000px; text-align: left;  }
 .clear { display: block; line-height: 0; font-size: 0; margin: 0; padding: 0; height: 0; overflow: hidden; clear: both; }
 .border { background-image: url(bg.png); background-repeat: repeat-x; background-size: auto 20px; }
 .highlight { color: $fifth-color; }
 .white { color: $primary-color; }
 .center { text-align: center; }
-a { color: $primary-color; }
+a { color: $fourth-color; }
 a:hover { color: $fifth-color; }
 
 /* Page Styles */
@@ -103,23 +104,29 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 /* MAIN BUILD */
 
 /* Header */
-#header { margin-top: 2.5%; }
-.mainlogo { margin: 0 auto; padding: 10% 5%; color: $primary-color; }
+#header { margin: 2.5% 0%; }
+.mainlogo { padding: 10% 5%; color: $primary-color; }
 .logobg { background-color: $secondary-color; }
 .strap { background-color: $primary-color; text-align: center; padding: 10%; }
 
 /* Navigation */
-
+nav { font-family: $primary-font; font-size: 1.875em; /* 30px */ letter-spacing: 5px; padding: 5% 0%; }
+nav li { display: inline-block; }
 
 
 /* Footer */
-#footer { background-color: $fourth-color; color: $primary-color; margin-bottom: 0; padding: 8% 0%; /* 80px 0px */
-	.centered { text-align: left; }
+
+#contact { background-color: $fourth-color; color: $secondary-color; margin-bottom: 0; padding: 8% 0%; /* 80px 0px */
 	li { display: inline-block; }
 	.social_btn { width: 15%; padding-right: 5%; }
 	.hello { padding-top: 5%; }
 	li:last-child { margin-right: 0; }
 	p, li { padding-bottom: 0; margin-bottom: 0; font-size: 1.75em; /* 28px */ }
+}
+#sponsors { background-color: $primary-color;
+	h4 { color: $eighth-color; }
+	ul { padding: 5% 0%; }
+	li { width: 15%; display: inline-block; margin-right: 5%; }
 }
 
 /* Content */
@@ -127,9 +134,7 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 .border {
 	h2 { background-color: $primary-color; margin: 0 auto; display: inline-block; padding: 0% 5%; font-size: 2.1875em; /* 35px */ margin: -5%; padding-top: 4.3%; }
 }
-#newsletter { background-color: $secondary-color; padding: 5% 0%;
-	.centered { text-align: left; }
-}
+#newsletter { background-color: $secondary-color; padding: 5% 0%; }
 .fill { padding: 1.5% 0px; } /* 15px 0px */
 .follow { padding: 11% 0% 5.5% 0%; } /* 110px 0px 55px 0px */
 #instagram { padding-bottom: 6.5% ; /* 65px */ }
@@ -137,7 +142,7 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 #show, #blurb, #social { padding-top: 10%;
 	h3 { padding-top: 8%; }
 }
-#blurb { padding-bottom: 10%; margin-top: 5%;
+#blurb { padding-bottom: 10%;
 	p { font-size: 1.75em; /* 28px */ line-height: 1.7; }
 }
 #social, #newsletter, #footer { font-family: $primary-font; }
@@ -147,10 +152,15 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 .subscribe_btn input { display: inline-block; float: left; width: 15%; font-size: 1.5em; font-weight: bold; letter-spacing: 2px; background-color: $fourth-color;	}
 .subscribe_btn input:hover { background-color: $third-color; color: $fourth-color; }
 .string.email.required { padding: 3.3%; border: #fff; }
+#social h3 { text-align: left; }
 
 #thanks { padding: 10% 0%; }
 
+#featured { font-family: $primary-font;
+	h2 { font-size: 150px; }
+}
 
+.product_box { width: 27.5%; display: inline-block; margin: 0% 2.5%; margin-bottom: 5%; background-color: gray; border: solid 15px $fourth-color; text-align: center; padding: 7.5% 0%; }
 
 
 /* Media Queries / Break Points */
