@@ -80,13 +80,13 @@ a:hover { color: $fifth-color; }
 
 /* Page Styles */
 /* 16px browser default */
-h1 { font-size: 3.75em; /* 60px */ letter-spacing: 10px; /* 10px */ }
+h1 { font-size: 8em; /* 60px */ letter-spacing: 10px; /* 10px */ }
 h2 { font-size: 1.875em; /* 30px */ letter-spacing: 5px; }
 h3 { font-size: 1.75em; /* 28px */ line-height: 1.7; }
 h4 { font-size: 1em; /* 16px */ }
 h5 { font-size: 0.75em; /* 12px */ }
 h6 { font-size: 0.625em; /* 10px */ }
-p { font-size: 1em; /* 16px */  padding-bottom: 1.25em; /* 20px */ }
+p { font-size: 1em; /* 16px */  padding-bottom: 1.25em; /* 20px */ font-family: $font-light; }
 li { font-size: 1em;}
 
 strong { font-weight: bold; }
@@ -142,13 +142,16 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 /* MAIN BUILD */
 
 /* Header */
-#header { margin: 2.5% 0%; }
-.mainlogo { padding: 10% 5%; color: $primary-color; }
+#header { margin: 2.5% 0%;
+	.centered { text-align: center; }
+}
+.mainlogo { padding: 10% 0%; }
 .logobg { background-color: $secondary-color; }
 .strap { background-color: $primary-color; text-align: center; padding: 10%; }
 
 /* Navigation */
 nav { font-size: 1.875em; /* 30px */ letter-spacing: 5px; padding: 5% 0%; }
+nav ul { padding-left: 2.5%; }
 nav li { display: inline-block; }
 
 
@@ -157,12 +160,12 @@ nav li { display: inline-block; }
 #contact { background-color: $fourth-color; color: $secondary-color; margin-bottom: 0; padding: 8% 0%; /* 80px 0px */
 	li { display: inline-block; }
 	.social_btn { width: 15%; padding-right: 5%; }
-	.hello { padding-top: 5%; }
+	.hello { padding-top: 4.5%; }
 	li:last-child { margin-right: 0; }
 	p, li { padding-bottom: 0; margin-bottom: 0; font-size: 1.75em; /* 28px */ }
 }
 #sponsors { background-color: $primary-color;
-	h4 { color: $eighth-color; }
+	h4 { color: $eighth-color; margin-top: 7.5%; }
 	ul { padding: 5% 0%; }
 	li { width: 15%; display: inline-block; margin-right: 5%; }
 }
@@ -191,6 +194,7 @@ nav li { display: inline-block; }
 .subscribe_btn input:hover { background-color: $third-color; color: $fourth-color; }
 .string.email.required { padding: 3.3%; border: #fff; }
 #social h3 { text-align: left; }
+.subscribe_input input, #contact li, #sponsors h4, #social h3 { font-family: $font-medium; }
 
 #thanks { padding: 10% 0%; }
 
@@ -199,7 +203,7 @@ nav li { display: inline-block; }
 }
 
 .product_box { width: 27.5%; display: inline-block; margin: 0% 2.5%; margin-bottom: 5%; background-color: gray; border: solid 15px $fourth-color; text-align: center; padding: 7.5% 0%; }
-
+#newsletter h2, nav li, #header h1 { font-family: $font-bold; }
 
 /* Media Queries / Break Points */
 

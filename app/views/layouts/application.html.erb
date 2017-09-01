@@ -20,7 +20,7 @@
         <div class="logobg">
           <div class="centered">
             <div class="mainlogo">
-              <h1><%= link_to image_tag('letterspace.png'), root_path %></h1>
+              <h1>LETTERSPACE</h1>
             </div>
           </div>
         </div>
@@ -30,6 +30,7 @@
         <div class="centered">
           <ul>
             <li>ABOUT</li>
+            <li><%= link_to "LETTERS", root_path %></li>
             <li><%= link_to "SHOP", products_path %></li>
             <li>CONTACT</li>
           </ul>
@@ -48,13 +49,14 @@
 
       <div id="footer" class="grid_12">
 
-        <div id="sponsors" class="grid_12">
+        <div id="sponsors" class="grid_12 border">
 
           <div class="centered">
             <h4>Kindly supported by</h4>
 
             <ul>
               <li><%= image_tag('sh_gray.png') %></li>
+              <li><%= image_tag('dm_logo.png') %></li>
               <li><%= image_tag('mmu_gray.png') %></li>
             </ul>
           </div>
@@ -66,9 +68,9 @@
           <div class="centered">
 
             <div class="grid_6 alpha">
-              <p class="hello">
-                hello@letterspace.co.uk
-              </p>
+              <ul>
+                <li class="hello">hello@letterspace.co.uk</li>
+              </ul>
             </div>
 
             <div class="grid_6 omega">
