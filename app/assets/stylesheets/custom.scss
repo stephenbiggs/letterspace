@@ -153,7 +153,7 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 nav { font-size: 1.875em; /* 30px */ letter-spacing: 5px; padding: 5% 0%; }
 nav ul { padding: 2.5% 0% 0% 2.5% ; }
 nav li { display: inline-block; }
-
+nav li a { color: $fourth-color; }
 
 /* Footer */
 
@@ -200,7 +200,7 @@ nav li { display: inline-block; }
 	h2 { font-size: 150px; }
 }
 
-.product_box { width: 27.5%; display: inline-block; margin: 0% 2.5%; margin-bottom: 5%; background-color: gray; border: solid 15px $fourth-color; text-align: center; padding: 7.5% 0%; }
+.product_box { width: 27.5%; display: inline-block; margin: 0% 2.5%; margin-bottom: 5%; border: solid 15px $fourth-color; text-align: center; padding: 7.5% 0%; }
 #newsletter h2, nav li, #header h1 { font-family: $font-bold; }
 
 #outer-box { position: relative;  }
@@ -224,10 +224,12 @@ nav li { display: inline-block; }
 #outer-box #inner-box h4 {
 	font-family: $font-regular;
   text-align: center;
-	font-size: 2.0em;
+	font-size: 1.5em;
 }
 
-.designer_name { padding-top: 27.5%; }
+.designer_name { padding-top: 27.5%; font-family: $font-regular; }
+.designer_location { font-family: $font-bold !important; }
+.dash { margin: 10% 0; }
 
 /* Media Queries / Break Points */
 

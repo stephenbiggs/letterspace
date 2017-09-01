@@ -5,14 +5,14 @@
     <div id="featured_box">
       <% @products.each do |product| %>
 
-        <div id="outer-box" class="product_box" onclick="">
+        <div id="outer-box" class="product_box" onclick="" style="background-color:<%= product.product_background %>">
           <h2><%= product.title %></h2>
           <div id="inner-box">
             <h4 class="designer_name"><%= raw product.designer_name.gsub(" ", "<br>") %></h4>
             <div class="dash">
               -
             </div>
-            <h4><%= product.designer_name %></h4>
+            <h4 class="designer_location"><%= product.designer_location.upcase %></h4>
           </div>
         </div>
 
