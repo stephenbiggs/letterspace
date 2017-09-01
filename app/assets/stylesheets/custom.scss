@@ -203,7 +203,9 @@ nav li a { color: $fourth-color; }
 .product_box { width: 27.5%; display: inline-block; margin: 0% 2.5%; margin-bottom: 5%; border: solid 15px $fourth-color; text-align: center; padding: 7.5% 0%; }
 #newsletter h2, nav li, #header h1 { font-family: $font-bold; }
 
-#outer-box { position: relative;  }
+#outer-box { position: relative;
+	h2 { font-family: $font-bold; }
+}
 
 #outer-box:hover #inner-box {
   opacity: .9;
@@ -227,9 +229,24 @@ nav li a { color: $fourth-color; }
 	font-size: 1.5em;
 }
 
+#outer-box a {
+	color: $fourth-color;
+}
+
 .designer_name { padding-top: 27.5%; font-family: $font-regular; }
 .designer_location { font-family: $font-bold !important; }
 .dash { margin: 10% 0; }
+#show_image_box { background-color: $secondary-color; text-align: center; padding: 5% 0;
+	p { padding-top: 5%; }
+	.product_box { margin: 0; width: 40%;
+		h2 { font-size: 20em; font-weight: $font-bold; padding-bottom: 5%; }
+	}
+}
+#author_info_box { padding: 5% 0;
+	h2, p { font-family: $font-medium; }
+}
+#show_description { padding-top: 2.5%; }
+
 
 /* Media Queries / Break Points */
 
