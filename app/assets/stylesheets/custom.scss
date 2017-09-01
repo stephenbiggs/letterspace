@@ -86,7 +86,7 @@ h3 { font-size: 1.75em; /* 28px */ line-height: 1.7; }
 h4 { font-size: 1em; /* 16px */ }
 h5 { font-size: 0.75em; /* 12px */ }
 h6 { font-size: 0.625em; /* 10px */ }
-p { font-size: 1em; /* 16px */  padding-bottom: 1.25em; /* 20px */ font-family: $font-light; }
+p { font-size: 1.75em; /* 28px */ line-height: 1.7; /* 16px */  padding-bottom: 1.25em; /* 20px */ font-family: $font-light; }
 li { font-size: 1em;}
 
 strong { font-weight: bold; }
@@ -246,7 +246,11 @@ nav li a { color: $fourth-color; }
 	h2, p { font-family: $font-medium; }
 }
 #show_description { padding-top: 2.5%; }
+#contact_page { padding: 0% 0% 20% 3%;
+	li { font-size: 1.75em; /* 28px */ line-height: 1.7; }
+}
 
+a:active { color: $fifth-color !important; }
 
 /* Media Queries / Break Points */
 

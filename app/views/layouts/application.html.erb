@@ -33,10 +33,15 @@
 
         <div class="centered">
           <ul>
-            <li><a href="#blurb">ABOUT</a></li>
+            <% if @page == "home" %>
+              <li><a href="#blurb">ABOUT</a></li>
+            <% else %>
+              <li><%= link_to "ABOUT", root_path %></li>
+            <% end %>
+
             <li><%= link_to "LETTERS", root_path %></li>
             <li><%= link_to "SHOP", products_path %></li>
-            <li>CONTACT</li>
+            <li><%= link_to "CONTACT", contact_path %></li>
           </ul>
         </div>
       </nav>

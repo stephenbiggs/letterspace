@@ -9,5 +9,9 @@ class PagesController < ApplicationController
 
   end
 
+  def contact
+
+  end
+
 
 end

@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   resources :products, path: 'shop'
 
   get "thanks" => 'pages#thanks'
+  get "contact" => 'pages#contact'
 
 end
