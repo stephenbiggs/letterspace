@@ -197,7 +197,7 @@ nav li a { color: $fourth-color; }
 #thanks { padding: 2.5% 0% 10% 0%; }
 
 #featured { margin-bottom: 7.5%;
-	h2 { font-size: 150px; }
+	h2 { font-size: 9.375em; /* 150px */ }
 }
 
 .product_box { width: 28%; display: inline-block; margin: 0% 2.5%; margin-bottom: 5%; border: solid 15px $fourth-color; text-align: center; padding: 5% 0% 10% 0; text-align: center;}
@@ -258,10 +258,18 @@ a:active { color: $fifth-color !important; }
 
 /* Media Queries / Break Points */
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
 
 	.subscribe_btn input { display: block; width: 100%; }
 	#subscriber_email { width: 100%; display: block; margin: 0; }
+	nav .centered, #footer ul, header .centered { text-align: center; }
+	#featured { margin: 0; padding: 0; }
+	.product_box { width: 27.5%; }
+	#header h1 { font-size: 3em; }
+	.product_box { border: solid 10px $fourth-color; padding-bottom: 5%; }
+	#outer-box #inner-box h4 {
+		font-size: 1.25em;
+	}
 
 }
 
@@ -282,7 +290,9 @@ a:active { color: $fifth-color !important; }
 		width: 100%;
 	}
 
-	h1 { font-size: 1.875em; /* 30px */ }
+	#header { margin: 6% 0% 4.5% 0%;  }
+	#header .centered, nav .centered, #featured .centered { text-align: center; }
+	h1 { font-size: 1.5em; /* 30px */ letter-spacing: 8px; }
 	.border h2 { font-size: 1.5625em; /* 25px */ letter-spacing: 5px; margin: -10%;}
 	h3 { font-size: 1em; /* 16px */ line-height: 2; }
 	.mainlogo { margin: 0 auto; }
@@ -293,13 +303,33 @@ a:active { color: $fifth-color !important; }
 	#newsletter { padding: 10% 0%;
 		h2 { font-size: 0.75em; /* 12px */ }
 	}
-
+	nav .centered { padding: 0% 10%; }
+	nav {
+		ul { padding-top: 5%; }
+		li { font-size: 0.5em; }
+}
 	#show, #blurb, #social { padding-top: 15%; }
-	#footer p { margin-bottom: 10%; }
+	#blurb { padding: 10%;
+		p { font-size: 1em; line-height: 1.4; }
+	}
+	#newsletter { margin: 10% 0% -5% 0%;
+		h2 { font-size: 1.25em; }
+	}
+	#newsletter { padding: 10%; }
+	#social h3 { margin: 0% 10%; }
 	#footer {
-		p, li { font-size: 1em; /* 16px */ }
+		ul { text-align: center; padding: 0; margin: 0; }
+		p, li { font-size: 1em; /* 16px */ padding: 0; margin: 0; }
+		li { width: 100%; }
+	}
+	#sponsors {
+		h4 { margin: 10%; }
+		li { width: 50%; margin-bottom: 10%; }
 	}
 	.social_btn { width: 10% !important; }
 	#thanks h2 { font-size: 1em; /* 16px */ }
+	.product_box { width: 80%; padding-bottom: 30%; border: solid 10px $fourth-color; }
+	#outer-box  { padding-top: 10%; }
+	#contact li { margin-bottom: 10%; }
 
 }
