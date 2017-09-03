@@ -311,6 +311,7 @@ a:active { color: $fifth-color !important; }
 	#header { margin: 6% 0% 4.5% 0%;  }
 	#header .centered, nav .centered, #featured .centered { text-align: center; }
 	h1 { font-size: 1.5em; /* 30px */ letter-spacing: 8px; }
+	.border { padding: 5% 0; }
 	.border h2 { font-size: 1.5625em; /* 25px */ letter-spacing: 5px; margin: -10%;}
 	h3 { font-size: 1em; /* 16px */ line-height: 2; }
 	.mainlogo { margin: 0 auto; }
@@ -325,11 +326,15 @@ a:active { color: $fifth-color !important; }
 	nav {
 		ul { padding-top: 5%; }
 		li { font-size: 0.5em; }
-}
-	#show, #blurb, #social { padding-top: 15%; }
-	#blurb { padding: 10%;
-		p { font-size: 1em; line-height: 1.4; }
 	}
+	#show, #blurb, #social { padding-top: 15%; }
+	#blurb, #contact_page, #shop_index, { padding: 10%;
+		p, { font-size: 1em; line-height: 1.4; }
+	}
+	#contact_page {
+		li { font-size: 1em; line-height: 1.4; }
+	} ul { padding-bottom: 10%; }
+	#shop_index { padding-bottom: 20%; }
 	#newsletter { margin: 10% 0% -5% 0%;
 		h2 { font-size: 1.25em; }
 	}
