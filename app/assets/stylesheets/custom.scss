@@ -265,12 +265,27 @@ a:active { color: $fifth-color !important; }
 	nav .centered, #footer ul, header .centered { text-align: center; }
 	#featured { margin: 0; padding: 0; }
 	.product_box { width: 27.5%; }
-	#header h1 { font-size: 3em; }
+
 	.product_box { border: solid 10px $fourth-color; padding-bottom: 5%; }
 	#outer-box #inner-box h4 {
 		font-size: 1.25em;
 	}
 
+}
+
+@media screen and (max-width: 800px) {
+	#header {
+		.centered { text-align: center; }
+		h1 { font-size: 2.5em; }
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#header h1 { font-size: 3em; }
+}
+
+@media screen and (max-width: 750px) {
+	#header h1 { font-size: 1.5em; }
 }
 
 @media screen and (max-width: 700px) {

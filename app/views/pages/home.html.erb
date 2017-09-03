@@ -7,7 +7,7 @@
 
         <div id="outer-box" class="product_box" onclick="" style="background-color:<%= product.product_background %>">
           <h2><%= product.title %></h2>
-          <a href="<%= product_path(product) %>">
+          <!--<a href="<%= product_path(product) %>">-->
             <div id="inner-box">
               <h4 class="designer_name"><%= raw product.designer_name.gsub(" ", "<br>") %></h4>
               <div class="dash">
@@ -15,7 +15,7 @@
               </div>
               <h4 class="designer_location"><%= product.designer_location.upcase %></h4>
             </div>
-          </a>
+          <!-- </a> -->
         </div>
 
       <% end %>
