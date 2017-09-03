@@ -76,11 +76,11 @@ img { max-width: 100%; }
 .white { color: $primary-color; }
 .center { text-align: center; }
 a { color: $fourth-color; }
-a:hover { color: $fifth-color; }
+a:hover { color: $third-color; }
 
 /* Page Styles */
 /* 16px browser default */
-h1 { font-size: 8em; /* 60px */ letter-spacing: 10px; /* 10px */ }
+h1 { font-size: 5.5em; /* 60px */ letter-spacing: 35px; /* 10px */ }
 h2 { font-size: 1.875em; /* 30px */ letter-spacing: 5px; }
 h3 { font-size: 1.75em; /* 28px */ line-height: 1.7; }
 h4 { font-size: 1em; /* 16px */ }
@@ -142,23 +142,23 @@ input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 /* MAIN BUILD */
 
 /* Header */
-#header { margin: 2.5% 0%;
-	.centered { text-align: center; }
-}
+#header { margin: 2.5% 0% 0% 0%; }
 .mainlogo { padding: 10% 0%; }
 .logobg { background-color: $secondary-color; }
 .strap { background-color: $primary-color; text-align: center; padding: 10%; }
 
 /* Navigation */
-nav { font-size: 1.875em; /* 30px */ letter-spacing: 5px; padding: 5% 0%; }
-nav ul { padding: 2.5% 0% 0% 2.5% ; }
-nav li { display: inline-block; }
+nav { font-size: 1.875em; /* 30px */ letter-spacing: 5px; padding: 3.5% 0% 5% 0%; }
+nav ul { padding: 2.5% 0% 0% 0% ; }
+nav li { display: inline-block; letter-spacing: 6px; font-size: 0.875em; margin-right: 2.5%; }
 nav li a { color: $fourth-color; }
 
 /* Footer */
 
 #contact { background-color: $fourth-color; color: $secondary-color; margin-bottom: 0; padding: 8% 0%; /* 80px 0px */
-	li { display: inline-block; }
+	li { display: inline-block;
+		a { color: $primary-color; }
+	}
 	.social_btn { width: 15%; padding-right: 5%; }
 	.hello { padding-top: 4.5%; }
 	li:last-child { margin-right: 0; }
@@ -167,7 +167,7 @@ nav li a { color: $fourth-color; }
 #sponsors { background-color: $primary-color;
 	h4 { color: $eighth-color; margin-top: 2.5%; }
 	ul { padding: 5% 0%; }
-	li { width: 15%; display: inline-block; margin-right: 5%; }
+	li { display: inline-block; margin-right: 10%; }
 }
 
 /* Content */
@@ -175,14 +175,15 @@ nav li a { color: $fourth-color; }
 .border {
 	h2 { background-color: $primary-color; margin: 0 auto; display: inline-block; padding: 0% 5%; font-size: 2.1875em; /* 35px */ margin: -5%; padding-top: 4.3%; }
 }
-#newsletter { background-color: $secondary-color; padding: 5% 0%; margin: 5% 0; }
-.follow { padding: 11% 0% 5.5% 0%; } /* 110px 0px 55px 0px */
+#newsletter { background-color: $secondary-color; padding: 5% 0%; margin: 2.5% 0; }
+.follow { padding: 7.5% 0% 5.5% 0%; } /* 110px 0px 55px 0px */
 #instagram { padding-bottom: 6.5% ; /* 65px */ }
 #instagram .grid_4 { background-color: $secondary-color; padding: 15% 0%; }
 #show { padding-top: 10%; }
 #social{ padding: 2.5% 0%; }
-#blurb { padding: 10% 0%;
+#blurb { padding: 7.5% 0% 10% 0%;
 	p { font-size: 1.75em; /* 28px */ line-height: 1.7; }
+	a { border-bottom: 1px solid $third-color; padding-bottom: 0.5%; }
 }
 
 .subscribe_box { padding-top: 5%; }
@@ -193,14 +194,15 @@ nav li a { color: $fourth-color; }
 #social h3 { text-align: left; }
 .subscribe_input input, #contact li, #sponsors h4, #social h3 { font-family: $font-medium; }
 
-#thanks { padding: 10% 0%; }
+#thanks { padding: 5% 0% 10% 0%; }
 
-#featured { margin-bottom: 10%;
+#featured { margin-bottom: 7.5%;
 	h2 { font-size: 150px; }
 }
 
 .product_box { width: 27.5%; display: inline-block; margin: 0% 2.5%; margin-bottom: 5%; border: solid 15px $fourth-color; text-align: center; padding: 7.5% 0%; }
 #newsletter h2, nav li, #header h1 { font-family: $font-bold; }
+#newsletter h2 { letter-spacing: 6px; }
 
 #outer-box { position: relative;
 	h2 { font-family: $font-bold; }
