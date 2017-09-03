@@ -194,13 +194,13 @@ nav li a { color: $fourth-color; }
 #social h3 { text-align: left; }
 .subscribe_input input, #contact li, #sponsors h4, #social h3 { font-family: $font-medium; }
 
-#thanks { padding: 5% 0% 10% 0%; }
+#thanks { padding: 2.5% 0% 10% 0%; }
 
 #featured { margin-bottom: 7.5%;
 	h2 { font-size: 150px; }
 }
 
-.product_box { width: 27.5%; display: inline-block; margin: 0% 2.5%; margin-bottom: 5%; border: solid 15px $fourth-color; text-align: center; padding: 7.5% 0%; }
+.product_box { width: 28%; display: inline-block; margin: 0% 2.5%; margin-bottom: 5%; border: solid 15px $fourth-color; text-align: center; padding: 5% 0% 10% 0; text-align: center;}
 #newsletter h2, nav li, #header h1 { font-family: $font-bold; }
 #newsletter h2 { letter-spacing: 6px; }
 
@@ -209,7 +209,7 @@ nav li a { color: $fourth-color; }
 }
 
 #outer-box:hover #inner-box {
-  opacity: .9;
+  opacity: 1;
   transition: opacity .5s;
 }
 
@@ -222,6 +222,7 @@ nav li a { color: $fourth-color; }
   left: 0;
   position: absolute;
   transition: opacity .5s;
+	padding-top: 10%;
 }
 
 #outer-box #inner-box h4 {
@@ -253,6 +254,7 @@ nav li a { color: $fourth-color; }
 }
 
 a:active { color: $fifth-color !important; }
+#shop_index { padding-bottom: 5%; }
 
 /* Media Queries / Break Points */
 
