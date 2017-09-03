@@ -270,7 +270,7 @@ a:active { color: $fifth-color !important; }
 	#outer-box #inner-box h4 {
 		font-size: 1.25em;
 	}
-
+	#featured { padding-bottom: 5%; }
 }
 
 @media screen and (max-width: 800px) {
@@ -278,14 +278,17 @@ a:active { color: $fifth-color !important; }
 		.centered { text-align: center; }
 		h1 { font-size: 2.5em; }
 	}
+	#featured { padding-bottom: 10%; }
 }
 
 @media screen and (max-width: 768px) {
 	#header h1 { font-size: 3em; }
+	#featured { padding-bottom: 10%; }
 }
 
 @media screen and (max-width: 750px) {
 	#header h1 { font-size: 1.5em; }
+	#featured { padding-bottom: 10%; }
 }
 
 @media screen and (max-width: 700px) {
@@ -346,5 +349,6 @@ a:active { color: $fifth-color !important; }
 	.product_box { width: 80%; padding-bottom: 30%; border: solid 10px $fourth-color; }
 	#outer-box  { padding-top: 10%; }
 	#contact li { margin-bottom: 10%; }
+	#featured { padding-bottom: 7.5%; }
 
 }
