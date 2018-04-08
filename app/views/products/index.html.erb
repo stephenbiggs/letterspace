@@ -7,37 +7,61 @@
 
     <div class="shop_item_box grid_12">
 
-      <div class="grid_6 alpha">
+      <div class="grid_12">
+        <div class="grid_6 alpha">
 
-        <div class="product_image">
-          <%= image_tag ('a.jpg') %>
+          <div class="product_image">
+            <%= image_tag ('a.jpg') %>
+          </div>
+
+        </div>
+
+        <div class="grid_6 omega">
+
+          <div class="product_text">
+
+            <h3><%= product.title + ", " + product.designer_location %></h3>
+            <h3>Designed by <%= product.designer_name %></h3>
+
+            <ul>
+              <li>-</li>
+              <li>Limited edition of 26</li>
+              <li>Screen print, 420 x 594mm, unframed</li>
+              <li>Ink: <%= product.ink_type %></li>
+              <li>Paper: <%= product.paper_type %></li>
+              <li>Printed by Dan Mather</li>
+              <li>-</li>
+            </ul>
+
+            <div class="price">
+              <h3>£<%= product.price %> <span class="small">+ P&P</span></h3>
+            </div>
+
+            <div class="button">
+              <%= link_to "BUY", root_path %>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="grid_12">
+
+        <div class="grid_6 alpha">
+
+          <br />
+
+        </div>
+
+        <div class="grid_6 omega">
+
+          <%= link_to "SEE FULL PRODUCT INFO", product_path(product) %>
+
         </div>
 
       </div>
 
-      <div class="grid_6 omega">
-
-        <div class="product_text">
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="grid_12">
-
-      <div class="grid_6 alpha">
-
-        artwork available April 2018
-
-      </div>
-
-      <div class="grid_6 omega">
-
-        <%= link_to "SEE FULL PRODUCT INFO", product_path(product) %>
-
-      </div>
 
     </div>
 

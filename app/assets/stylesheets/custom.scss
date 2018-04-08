@@ -92,6 +92,7 @@ li { font-size: 1em;}
 strong { font-weight: bold; }
 em { font-style: italic; }
 style:focus { outline: 1; }
+.small { font-size: 0.65em; }
 
 /* Inputs to fix zoom on mobile */
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"],
@@ -261,7 +262,13 @@ a:active { color: $fifth-color !important; }
 	li { display: inline-block; border-bottom: 1px solid; }
 	li:first-child {margin-right: 5%; }
 }
-.show_box, .product_image { width: 50%; margin: 0 auto; }
+.show_box { width: 50%; margin: 0 auto; }
+.product_image {width: 60%; margin: 0 auto; }
+.product_text h3 { font-family: $font-medium; }
+.shop_item_box { margin-bottom: 5%;
+	li { line-height: 1.7;}
+}
+
 
 
 
