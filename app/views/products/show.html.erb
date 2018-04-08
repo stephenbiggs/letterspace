@@ -3,28 +3,39 @@
 
   <div id="show_image_box" class="grid_12">
 
-    <div class="product_box show_box" style="background-color:<%= @product.product_background %>">
-      <h2><%= @product.title %></h2>
+    <div class="show_box">
+      <%= image_tag ('a.jpg') %>
     </div>
-
-    <p>
-      * artwork available 2018
-    </p>
 
   </div>
 
   <div id="author_info_box" class="grid_12">
-    <h2>ABOUT THIS LETTER</h2>
+    <h2>ABOUT</h2>
 
-    <div id="show_description">
+    <div class="show_description">
       <p>
         <%= @product.description %>
       </p>
     </div>
 
-    <div id="show_button" class="button">
-      AVAILABLE TO BUY APRIL 2018
+    <h2>About the designer, <%= @product.designer_name %></h2>
+
+    <div class="show_description">
+      <p>
+        <%= @product.designer_bio %>
+      </p>
     </div>
+
+    <div id="show_button" class="button">
+      <%= link_to "GO TO SHOP", products_path %>
+    </div>
+  </div>
+
+  <div id="next_letter_box">
+    <ul>
+      <li>NEXT LETTER</li>
+      <li><%= link_to "SEE ALL LETTERS", products_path %></li>
+    </ul>
   </div>
 
 
