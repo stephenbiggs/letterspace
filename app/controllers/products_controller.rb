@@ -6,6 +6,10 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+
+    @next_id = @product.id.to_i + 1
+
+    @next_product = Product.find_by_id(@next_id)
   end
 
   def new

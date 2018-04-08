@@ -33,7 +33,9 @@
 
   <div id="next_letter_box">
     <ul>
-      <li>NEXT LETTER</li>
+      <% if @next_product.present? %>
+        <li><%= link_to "NEXT LETTER", product_path(@next_product) %></li>
+      <% end %>
       <li><%= link_to "SEE ALL LETTERS", products_path %></li>
     </ul>
   </div>
