@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 
   def home
     @subscriber = Subscriber.new
-    @products = Product.all
+    @products = Product.order('title asc')
   end
 
   def thanks
