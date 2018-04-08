@@ -249,7 +249,8 @@ nav li a { color: $fourth-color; }
 	h2, p { font-family: $font-medium; }
 }
 .show_description { padding-top: 2.5%; }
-#show_button { font-family: $font-medium; background-color: $fifth-color; color: $fourth-color; }
+.show_button { font-family: $font-medium; background-color: $fifth-color; color: $fourth-color; }
+.show_button:hover a { color: $third-color; }
 #contact_page { padding: 0% 0% 20% 3%;
 	li { font-size: 1.75em; /* 28px */ line-height: 1.7; }
 }
