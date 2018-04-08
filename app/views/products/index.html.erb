@@ -1,8 +1,57 @@
 <div class="grid_12" id="shop_index">
   <div class="centered">
-    <p>
-      From April 2018, the Letterspace shop will sell all 26 posters of the Letterspace alphabet.
-      Keep an eye on <a href="http://www.twitter.com/letterspace_" target="_blank">Twitter</a> and <a href="http://www.instagram.com/letterspace_" target="_blank">Instagram</a> <a href="http://www.instagram.com/letterspace_" target="_blank">@Letterspace_</a> for updates.
-    </p>
+
+<% if Rails.env.development? %>
+
+  <% @products.each do |product| %>
+
+    <div class="shop_item_box grid_12">
+
+      <div class="grid_6 alpha">
+
+        <div class="product_image">
+          <%= image_tag ('a.jpg') %>
+        </div>
+
+      </div>
+
+      <div class="grid_6 omega">
+
+        <div class="product_text">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="grid_12">
+
+      <div class="grid_6 alpha">
+
+        artwork available April 2018
+
+      </div>
+
+      <div class="grid_6 omega">
+
+        <%= link_to "SEE FULL PRODUCT INFO", product_path(product) %>
+
+      </div>
+
+    </div>
+
+
+  <% end %>
+
+<% else %>
+
+  <p>
+    From April 2018, the Letterspace shop will sell all 26 posters of the Letterspace alphabet.
+    Keep an eye on <a href="http://www.twitter.com/letterspace_" target="_blank">Twitter</a> and <a href="http://www.instagram.com/letterspace_" target="_blank">Instagram</a> <a href="http://www.instagram.com/letterspace_" target="_blank">@Letterspace_</a> for updates.
+  </p>
+
+<% end %>
+
   </div>
 </div>
