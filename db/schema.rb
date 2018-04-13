@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180408122807) do
+ActiveRecord::Schema.define(version: 20180413180224) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 20180408122807) do
     t.text     "letter_bio"
     t.string   "product_size"
     t.string   "product_location"
+    t.text     "paypal_button"
   end
 
   create_table "subscribers", force: :cascade do |t|
