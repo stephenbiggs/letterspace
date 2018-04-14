@@ -37,9 +37,19 @@
               <h3>£<%= product.price %> <span class="small">+ P&P</span></h3>
             </div>
 
-            <div class="paypal_button">
-              <%== product.paypal_button %>
+            <div class="quantity">
+              Qty: <%= product.quantity %>
             </div>
+
+            <% if product.quantity != 0 %>
+              <div class="paypal_button">
+                <%== product.paypal_button %>
+              </div>
+            <% else %>
+              <p>
+                Sold out
+              </p>
+            <% end %>
 
           </div>
 
