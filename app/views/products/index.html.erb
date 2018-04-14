@@ -11,7 +11,13 @@
         <div class="grid_6 alpha">
 
           <div class="product_image">
-            <%= image_tag ('a.jpg') %>
+            <% if product.image.present? %>
+              <%= image_tag(product.image(:medium)) %>
+            <% else %>
+              <p class="no_image">
+                Image coming soon
+              </p>
+            <% end %>
           </div>
 
         </div>

@@ -57,6 +57,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'simple_form'
 gem 'foundation-rails', '~> 6.2', '>= 6.2.0.1'
+gem 'active_admin_editor', github: 'ejholmes/active_admin_editor'
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+gem 'aws-sdk', '~> 3'
 
 gem 'activeadmin'
 # Plus integrations with:
