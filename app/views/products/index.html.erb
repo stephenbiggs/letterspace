@@ -26,7 +26,7 @@
 
           <div class="product_text">
 
-            <h3><%= product.title + ", " + product.designer_location %></h3>
+            <h3><%= product.title + ", " + product.product_location.to_s %></h3>
             <h3>Designed by <%= product.designer_name %></h3>
 
             <ul>
@@ -35,7 +35,7 @@
               <li>Screen print, 420 x 594mm, unframed</li>
               <li>Ink: <%= product.ink_type %></li>
               <li>Paper: <%= product.paper_type %></li>
-              <li>Printed by Dan Mather</li>
+              <li>Printed by <a href="http://danmatherscreenprint.co.uk" target="_blank">Dan Mather Screenprint</a></li>
               <li>-</li>
             </ul>
 
@@ -44,7 +44,7 @@
             </div>
 
             <div class="quantity">
-              Qty: <%= product.quantity %>
+              Qty remaining: <%= product.quantity %>
             </div>
 
             <% if product.quantity != 0 %>

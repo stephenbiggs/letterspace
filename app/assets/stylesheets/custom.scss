@@ -87,7 +87,7 @@ h4 { font-size: 1em; /* 16px */ }
 h5 { font-size: 0.75em; /* 12px */ }
 h6 { font-size: 0.625em; /* 10px */ }
 p { font-size: 1.75em; /* 28px */ line-height: 1.7; /* 16px */  padding-bottom: 1.25em; /* 20px */ font-family: $font-light; }
-li { font-size: 1em;}
+li { font-size: 1em; }
 
 strong { font-weight: bold; }
 em { font-style: italic; }
@@ -246,7 +246,8 @@ nav li a { color: $fourth-color; }
 	}
 }
 #author_info_box { padding: 5% 0;
-	h2, p { font-family: $font-medium; }
+	h2 { font-family: $font-bold; letter-spacing: 6px; font-size: 1.5em; }
+	p { font-family: $font-regular; font-size: 1em; }
 }
 .show_description { padding-top: 2.5%; }
 .show_button { font-family: $font-medium; background-color: $fifth-color; color: $fourth-color; }
