@@ -14,7 +14,7 @@
   <div id="author_info_box" class="grid_12">
     <h2>ABOUT</h2>
 
-    <div class="show_description">
+    <div class="show_description grid_12">
       <p>
         <%= @product.description %>
       </p>
@@ -22,14 +22,29 @@
 
     <h2>About the designer, <%= @product.designer_name %></h2>
 
-    <div class="show_description">
+    <div class="show_description grid_12">
       <p>
         <%= @product.designer_bio %>
       </p>
     </div>
 
-    <div class="button show_button">
-      <%= link_to "GO TO THE SHOP", products_path %>
+    <div class="product_text grid_12">
+
+      <ul>
+        <li class="dash1">-</li>
+        <li>Limited edition of 26</li>
+        <li>Screen print, 420 x 594mm, unframed</li>
+        <li>Ink: <%= @product.ink_type %></li>
+        <li>Paper: <%= @product.paper_type %></li>
+        <li>Printed by <a href="http://danmatherscreenprint.co.uk" target="_blank">Dan Mather Screenprint</a></li>
+        <li class="dash1">-</li>
+      </ul>
+
+    </div>
+
+
+    <div class="shop_button grid_12">
+      <%= link_to "GO TO THE SHOP", products_path, class: "show_button button" %>
     </div>
   </div>
 
