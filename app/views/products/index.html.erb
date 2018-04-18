@@ -12,7 +12,7 @@
 
           <div class="product_image">
             <% if product.image.present? %>
-              <%= image_tag(product.image(:medium)) %>
+              <%= image_tag(product.image) %>
             <% else %>
               <p class="no_image">
                 Image coming soon
