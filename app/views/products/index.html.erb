@@ -1,7 +1,7 @@
 <div class="grid_12" id="shop_index">
   <div class="centered">
 
-<% if Rails.env.development? %>
+
 
   <% @products.each do |product| %>
 
@@ -39,12 +39,16 @@
               <li>-</li>
             </ul>
 
+            <div class="quantity">
+              Qty remaining: <%= product.quantity %>
+            </div>
+
             <div class="price">
               <h3>£<%= product.price %> <span class="small">+ P&P</span></h3>
             </div>
 
-            <div class="quantity">
-              Qty remaining: <%= product.quantity %>
+            <div class="delivery_info">
+              <a data-open="exampleModal1">Order and delivery info</a>
             </div>
 
             <% if product.quantity != 0 %>
@@ -84,6 +88,28 @@
 
   <% end %>
 
+  <div class="reveal" id="exampleModal1" data-reveal>
+    <h3>Payment</h3>
+    <p>
+      Click ‘add to cart’ on one or more posters, then complete the transaction via the PayPal pop-up window.
+    </p>
+
+    <h3>Postage, Packaging & Delivery</h3>
+    <p>
+      The posters will be packed in pristine condition, within acid-free tissue paper, in a very strong A2 mailer. They will be sent 1st Class via Royal Mail. We will endeavour to post your poster at the earliest, however, please allow up to 21 working days for delivery.
+    </p>
+
+    <h3>Print Quality</h3>
+    <p>
+      Due to the printing process used, slight variations in print, colour and texture do occur.
+    </p>
+
+
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
 <% else %>
 
   <p>
@@ -91,7 +117,7 @@
     Keep an eye on <a href="http://www.twitter.com/letterspace_" target="_blank">Twitter</a> and <a href="http://www.instagram.com/letterspace_" target="_blank">Instagram</a> <a href="http://www.instagram.com/letterspace_" target="_blank">@Letterspace_</a> for updates.
   </p>
 
-<% end %>
+
 
   </div>
 </div>

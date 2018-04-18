@@ -272,7 +272,13 @@ a:active { color: $fifth-color !important; }
 }
 .paypal_button { margin: 2.5% 0%; }
 .no_image { padding-top: 50%; }
+.delivery_info, .price { margin-top: 1%; }
+.reveal {
 
+	padding: 5%;
+
+	p { font-size: 1em; }
+}
 
 
 /* Media Queries / Break Points */
