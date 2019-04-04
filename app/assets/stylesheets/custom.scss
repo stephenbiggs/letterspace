@@ -257,6 +257,9 @@ nav li a { color: $fourth-color; }
 }
 a:active { color: $fifth-color !important; }
 #shop_index { padding-bottom: 5%; }
+#shop_index h2 {
+  margin: 5% 0%;
+}
 #sponsor_box { padding: 5% 0%; text-align: center;
 	img { width: 90%; }
 }

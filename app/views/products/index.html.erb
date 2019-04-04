@@ -1,130 +1,138 @@
+<% @page = "closed" %>
+
 <div class="grid_12" id="shop_index">
   <div class="centered">
 
+  <% if @page == "closed" %>
+    
+    <h2>The Letterspace shop is now closed but we hope to open it again in the future with a new alphabet!</h2>
+ 
+  <% else %>
 
+    <% @products.each do |product| %>
 
-  <% @products.each do |product| %>
+      <div class="shop_item_box grid_12">
 
-    <div class="shop_item_box grid_12">
+        <div class="grid_12">
+          <div class="grid_6 alpha">
 
-      <div class="grid_12">
-        <div class="grid_6 alpha">
+            <div class="product_image">
+              <% if product.image.present? %>
+                <%= image_tag(product.image) %>
+              <% else %>
+                <p class="no_image">
+                  Image coming soon
+                </p>
+              <% end %>
+            </div>
 
-          <div class="product_image">
-            <% if product.image.present? %>
-              <%= image_tag(product.image) %>
-            <% else %>
-              <p class="no_image">
-                Image coming soon
-              </p>
-            <% end %>
           </div>
 
-        </div>
+          <div class="grid_6 omega">
 
-        <div class="grid_6 omega">
+            <div class="product_text">
 
-          <div class="product_text">
+              <h3><%= product.title + ", " + product.product_location.to_s %></h3>
+              <h3>Designed by <%= product.designer_name %></h3>
 
-            <h3><%= product.title + ", " + product.product_location.to_s %></h3>
-            <h3>Designed by <%= product.designer_name %></h3>
+              <ul>
+                <li>-</li>
+                <li>Limited edition of 26</li>
+                <li>Screen print, 420 x 594mm, unframed</li>
+                <li>Ink: <%= product.ink_type %></li>
+                <li>Paper: <%= product.paper_type %></li>
+                <li>Printed by <a href="http://danmatherscreenprint.co.uk" target="_blank">Dan Mather Screenprint</a></li>
+                <li>-</li>
+              </ul>
 
-            <ul>
-              <li>-</li>
-              <li>Limited edition of 26</li>
-              <li>Screen print, 420 x 594mm, unframed</li>
-              <li>Ink: <%= product.ink_type %></li>
-              <li>Paper: <%= product.paper_type %></li>
-              <li>Printed by <a href="http://danmatherscreenprint.co.uk" target="_blank">Dan Mather Screenprint</a></li>
-              <li>-</li>
-            </ul>
-
-            <div class="quantity">
-              Qty remaining: <%= product.quantity %>
-            </div>
-
-            <div class="price">
-              <h3>£<%= product.price %> <span class="small">+ P&P</span></h3>
-            </div>
-
-            <div class="delivery_info">
-              <a data-open="exampleModal1">Order and delivery info</a>
-            </div>
-
-            <% if product.quantity != 0 %>
-              <div class="paypal_button">
-                <%== product.paypal_button %>
+              <div class="quantity">
+                Qty remaining: <%= product.quantity %>
               </div>
-            <% else %>
-              <p>
-                Sold out
-              </p>
-            <% end %>
+
+              <div class="price">
+                <h3>£<%= product.price %> <span class="small">+ P&P</span></h3>
+              </div>
+
+              <div class="delivery_info">
+                <a data-open="exampleModal1">Order and delivery info</a>
+              </div>
+
+              <% if product.quantity != 0 %>
+                <div class="paypal_button">
+                  <%== product.paypal_button %>
+                </div>
+              <% else %>
+                <p>
+                  Sold out
+                </p>
+              <% end %>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="grid_12">
+
+          <div class="grid_6 alpha">
+
+            <br />
+
+          </div>
+
+          <div class="grid_6 omega">
+
+            <%= link_to "SEE FULL PRODUCT INFO", product_path(product) %>
 
           </div>
 
         </div>
-      </div>
 
-      <div class="grid_12">
-
-        <div class="grid_6 alpha">
-
-          <br />
-
-        </div>
-
-        <div class="grid_6 omega">
-
-          <%= link_to "SEE FULL PRODUCT INFO", product_path(product) %>
-
-        </div>
 
       </div>
 
 
+    <% end %>
+
+    <div class="reveal" id="exampleModal1" data-reveal>
+      <h3>Payment</h3>
+      <p>
+        Click ‘add to cart’ on one or more posters, then complete the transaction via the PayPal pop-up window.
+      </p>
+
+      <h3>Postage, Packaging & Delivery</h3>
+      <p>
+        The posters are packed within acid-free tissue paper, in a very strong A2 mailer as they can’t be rolled due to the weight of the paper and nature of the print.
+      </p>
+
+      <p>
+        The mailer is too large for Royal Mail’s standard parcel service and I therefore use MyHermes to keep the cost as low as possible. I don’t make any money on the P+P charge. The full cost including the mailer is £8.
+      </p>
+
+      <p>
+        Due to the size of the mailer, international delivery must be priced individually. Please contact me on lucy@lucybrownstudio.com to enquire.
+      </p>
+        
+      <p>
+        If you would prefer to collect in person from Manchester or Macclesfield, I will refund the P+P charge to you via PayPal - please email me on lucy@lucybrownstudio.com to let me know.
+      </p>
+
+      <p>
+        I will endeavour to post your poster at the earliest, however, please allow up to 21 working days for delivery.
+      </p>
+
+      <h3>Print Quality</h3>
+      <p>
+        Due to the printing process used, slight variations in print, colour and texture do occur.
+      </p>
+
+
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
 
-
   <% end %>
-
-  <div class="reveal" id="exampleModal1" data-reveal>
-    <h3>Payment</h3>
-    <p>
-      Click ‘add to cart’ on one or more posters, then complete the transaction via the PayPal pop-up window.
-    </p>
-
-    <h3>Postage, Packaging & Delivery</h3>
-    <p>
-      The posters are packed within acid-free tissue paper, in a very strong A2 mailer as they can’t be rolled due to the weight of the paper and nature of the print.
-    </p>
-
-    <p>
-      The mailer is too large for Royal Mail’s standard parcel service and I therefore use MyHermes to keep the cost as low as possible. I don’t make any money on the P+P charge. The full cost including the mailer is £8.
-    </p>
-
-    <p>
-      Due to the size of the mailer, international delivery must be priced individually. Please contact me on lucy@lucybrownstudio.com to enquire.
-    </p>
-      
-    <p>
-      If you would prefer to collect in person from Manchester or Macclesfield, I will refund the P+P charge to you via PayPal - please email me on lucy@lucybrownstudio.com to let me know.
-    </p>
-
-    <p>
-      I will endeavour to post your poster at the earliest, however, please allow up to 21 working days for delivery.
-    </p>
-
-    <h3>Print Quality</h3>
-    <p>
-      Due to the printing process used, slight variations in print, colour and texture do occur.
-    </p>
-
-
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
 
 
   </div>
