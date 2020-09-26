@@ -239,7 +239,7 @@ nav li a { color: $fourth-color; }
 .designer_name { padding-top: 27.5%; font-family: $font-regular; }
 .designer_location { font-family: $font-bold !important; }
 .dash { margin: 10% 0; }
-#show_image_box { background-color: $secondary-color; text-align: center; padding: 5% 0;
+#show_image_box { background-color: $secondary-color; text-align: center; padding: 5% 0; position: relative;
 	p { padding-top: 5%; }
 	.product_box { margin: 0; width: 40%;
 		h2 { font-size: 20em; font-weight: $font-bold; padding-bottom: 5%; }
@@ -268,6 +268,16 @@ a:active { color: $fifth-color !important; }
 	li:first-child {margin-right: 5%; }
 }
 .show_box { width: 50%; margin: 0 auto; }
+.prev_link {position: absolute; top: 50%; left: 100px; font-size: 3rem; transform: translateY(-50%); }
+.next_link {position: absolute; top: 50%; right: 100px; font-size: 3rem; transform: translateY(-50%); }
+.next_link, .prev_link {
+	a {
+		color: #cdcdcd;
+	}
+	a:hover {
+		color: $third-color;
+	}
+}
 .product_image {width: 60%; margin: 0 auto; }
 .product_text h3 { font-family: $font-medium; }
 .shop_item_box { margin-bottom: 5%;

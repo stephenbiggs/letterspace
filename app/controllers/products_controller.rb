@@ -8,8 +8,10 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
 
     @next_id = @product.id.to_i + 1
-
     @next_product = Product.find_by_id(@next_id)
+
+    @prev_id = @product.id.to_i - 1
+    @prev_product = Product.find_by_id(@prev_id)
   end
 
   def new

@@ -1,8 +1,23 @@
+<% @page = "show" %>
 
 <div id="show_page" class="centered">
 
   <div id="show_image_box" class="grid_12">
+    <% if @prev_product.present? %>
+      <div class="prev_link">
+      <%= link_to product_path(@prev_product) do %>
+        <i class="fas fa-angle-left"></i>
+      <% end %>
+      </div>
+    <% end %>
 
+    <% if @next_product.present? %>
+      <div class="next_link">
+      <%= link_to product_path(@next_product) do %>
+        <i class="fas fa-angle-right"></i>
+      <% end %>
+      </div>
+    <% end %>
 
     <div class="show_box">
       <%= image_tag(@product.image) %>
